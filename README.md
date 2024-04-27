@@ -5,3 +5,10 @@
 
 ## Aplicación de Tienda de Cafés
 
+### Scafolding del proyecto
+```
+    - angular
+    - src
+    | --app
+
+```
