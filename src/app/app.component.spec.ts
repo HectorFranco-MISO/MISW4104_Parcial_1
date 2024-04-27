@@ -30,7 +30,7 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('ParcialMISW4104');
   });
 
-  it('should render title', () => {
+  it(`should render title <h1> 'El aroma màgico <h1>'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
