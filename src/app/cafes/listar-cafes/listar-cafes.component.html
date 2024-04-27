@@ -1,13 +1,13 @@
 <table class="table">
-  <thead class="table-dark">
+  <thead class="table-dark" id="thead">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Región</th>
+      <th scope="col" id="col-id">#</th>
+      <th scope="col" id="col-nombre">Nombre</th>
+      <th scope="col" id="col-tipo">Tipo</th>
+      <th scope="col" id="col-region">Región</th>
     </tr>
   </thead>
-  <tbody class="table-group-divider">
+  <tbody class="table-group-divider" id="tbody">
     <tr *ngFor="let cafe of cafes">
       <td>
         <dd>{{cafe.id}}</dd>
@@ -24,5 +24,5 @@
     </tr>
   </tbody>
 </table>
-<p>Total café de origen: {{cantidadTipoOrigen}}</p>
-<p>Total café blend: {{cantidadTipoBlend}}</p>
+<p id="p-origen">Total café de origen: {{cantidadTipoOrigen}}</p>
+<p id="p-blend">Total café blend: {{cantidadTipoBlend}}</p>
