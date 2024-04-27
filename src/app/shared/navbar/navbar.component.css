@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+h1 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+  padding-top: 1%;
+  border-top: 1px solid #a3a3a3;
+  padding-bottom: 1%;
+  border-bottom: 1px solid #a3a3a3;
+  margin-bottom: 1.5%;
+}
+  
