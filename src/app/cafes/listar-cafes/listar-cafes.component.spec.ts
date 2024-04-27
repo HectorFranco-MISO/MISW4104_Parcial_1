@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ListarCafesComponent } from './listar-cafes.component';
+import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { CafeService } from '../service/cafe.service';
 
 describe('ListarCafesComponent', () => {
   let component: ListarCafesComponent;
@@ -11,7 +13,9 @@ describe('ListarCafesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListarCafesComponent ]
+      declarations: [ ListarCafesComponent ],
+      imports: [HttpClientTestingModule], 
+      providers: [CafeService]
     })
     .compileComponents();
   }));
