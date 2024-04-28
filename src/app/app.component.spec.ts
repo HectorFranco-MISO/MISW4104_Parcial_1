@@ -7,6 +7,7 @@ import { ListarCafesComponent } from './cafes/listar-cafes/listar-cafes.componen
 import { HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -18,22 +19,23 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('Should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ParcialMISW4104'`, () => {
+  it(`Should have as title 'ParcialMISW4104'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('ParcialMISW4104');
   });
 
-  it(`should render title <h1> 'El aroma màgico <h1>'`, () => {
+  it(`Should render title <h1> 'El aroma màgico <h1>'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('El aroma mágico');
   });
+
 });

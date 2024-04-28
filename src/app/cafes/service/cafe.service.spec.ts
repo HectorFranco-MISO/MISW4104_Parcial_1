@@ -26,7 +26,7 @@ describe('Service: Cafe', () => {
     httpMock.verify();
   });
 
-  it('should inject the Service', inject([CafeService], (service: CafeService) => {
+  it('Should inject the Service', inject([CafeService], (service: CafeService) => {
     expect(service).toBeTruthy();
   }));
 

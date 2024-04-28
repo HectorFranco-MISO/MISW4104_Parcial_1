@@ -37,7 +37,7 @@ describe('NavbarComponent', () => {
     expect(img.length).toBe(1);
   });
 
-  it(`should render title <h1> 'El aroma màgico <h1>'`, () => {
+  it(`Should render title <h1> 'El aroma màgico <h1>'`, () => {
     const fixture = TestBed.createComponent(NavbarComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
