@@ -25,4 +25,14 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Should have a <footer> element', () => {
+    const footer = fixture.nativeElement.querySelectorAll('footer');
+    expect(footer.length).toBe(1);
+  });
+
+  it('Should have a <p> element', () => {
+    const paragrah = fixture.nativeElement.querySelectorAll('p');
+    expect(paragrah.length).toBe(1);
+  });
 });

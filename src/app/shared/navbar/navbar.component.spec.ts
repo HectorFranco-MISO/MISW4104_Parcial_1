@@ -22,7 +22,25 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('Should have a <header> element', () => {
+    const header = fixture.nativeElement.querySelectorAll('header');
+    expect(header.length).toBe(1);
+  });
+
+  it('Should have a <h1> element', () => {
+    const h1 = fixture.nativeElement.querySelectorAll('h1');
+    expect(h1.length).toBe(1);
+  });
+
+  it('Should have an <img> element', () => {
+    const img = fixture.nativeElement.querySelectorAll('img');
+    expect(img.length).toBe(1);
+  });
+
+  it(`should render title <h1> 'El aroma màgico <h1>'`, () => {
+    const fixture = TestBed.createComponent(NavbarComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('El aroma mágico');
   });
 });
